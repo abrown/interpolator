@@ -87,8 +87,8 @@ public class InterpolateView extends FrameView {
         
         // debug setup
         try{
-            this.addDataFile(new File("C:\\Documents and Settings\\andrew\\My Documents\\Databases Final\\pm25_2009_measured.txt"), "day");
-            this.addDataFile(new File("C:\\Documents and Settings\\andrew\\My Documents\\Databases Final\\county_xy.txt"), "day");
+            this.addDataFile(new File("pm25_2009_measured.txt"), "day");
+            this.addDataFile(new File("county_xy.txt"), "day");
         }
         catch(Exception e){System.err.println(e); }
         
