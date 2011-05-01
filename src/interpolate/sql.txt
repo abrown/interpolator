@@ -1,0 +1,12 @@
+CREATE TABLE "data"(
+    "file" VARCHAR(250),
+    "id" INT,
+    "x" DOUBLE,
+    "y" DOUBLE,
+    "yr" INT,
+    "mo" INT,
+    "dy" INT,
+    "t" INT,
+    "value" DOUBLE,
+    PRIMARY KEY("file","id")
+);
