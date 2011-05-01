@@ -91,6 +91,7 @@ public class InterpolateView extends FrameView {
             this.addDataFile(new File("C:\\Documents and Settings\\andrew\\My Documents\\Databases Final\\county_xy.txt"), "day");
         }
         catch(Exception e){System.err.println(e); }
+        
     }
 
     @Action
@@ -359,7 +360,6 @@ public class InterpolateView extends FrameView {
         java.util.ArrayList<DataSet> possibilities = new java.util.ArrayList<DataSet>();
         for(java.util.Enumeration e = data.children(); e.hasMoreElements(); ){
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) e.nextElement();
-            System.out.println(node.getUserObject().getClass().getName());
             if( node.getUserObject().getClass().getName().equals("java.lang.String") ) continue;
             DataSet d = (DataSet) node.getUserObject();
             possibilities.add(d);
